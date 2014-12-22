@@ -1,5 +1,7 @@
 /**
  * Created by Artem Dvornichenko on 17 Dec 2014.
+ *
+ * Regular checkout for not logged in customer - SagePay
  */
 
 var casper = require('casper').create();
@@ -12,7 +14,7 @@ casper.then(function() {
         this.echo('Homepage', 'INFO');
     } else {
         this.echo("Couldn't reach the homepage", 'ERROR');
-    };
+    }
 });
 
 casper.thenOpen('http://artemdvornichenko.vaimo.com/accessories', function(){
